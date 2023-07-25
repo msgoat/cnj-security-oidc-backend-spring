@@ -1,9 +1,12 @@
 package group.msg.at.cloud.cloudtrain;
 
+import group.msg.at.cloud.common.security.oidc.resource.server.OidcMappedJwtClaimSetConverter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationConverter;
 import org.springframework.security.web.SecurityFilterChain;
 
 /**
@@ -25,10 +28,10 @@ public class WebSecurityConfiguration {
      * @throws Exception
      */
     @Bean
-    SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+    SecurityFilterChain filterChain(HttpSecurity http, JwtAuthenticationConverter customConverter) throws Exception {
         http
                 .authorizeHttpRequests(authz -> authz.requestMatchers("/actuator/**").permitAll().anyRequest().authenticated())
-                .oauth2ResourceServer().jwt();
+                .oauth2ResourceServer(oauth2 -> oauth2.jwt(jwt -> jwt.jwtAuthenticationConverter(customConverter)));
         return http.build();
     }
 }
