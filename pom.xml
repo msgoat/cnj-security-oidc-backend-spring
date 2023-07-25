@@ -9,7 +9,7 @@
     <description>Cloud native java backend using OpenID Connect security based on Spring Boot / Spring Cloud</description>
     <properties>
         <!-- new Maven version management -->
-        <revision>5.0.0</revision>
+        <revision>5.1.0</revision>
         <sha1>.12345678</sha1>
         <changelist>.LOCAL</changelist>
         <!-- general properties -->
