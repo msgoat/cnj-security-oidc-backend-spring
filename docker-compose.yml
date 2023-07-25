@@ -7,12 +7,10 @@
 services:
 
   backend:
-    image: docker.cloudtrain.aws.msgoat.eu/cloudtrain/cnj-security-oidc-backend-spring:${project.version}
+    image: docker.cloudtrain.aws.msgoat.eu/cloudtrain/cnj-security-oidc-backend-spring:latest
     ports:
       - "38080:8080"
-      - "38089:8089"
     environment:
-      AGENT_JAVA_OPTS: "-javaagent:/home/spring/org.jacoco.agent.jar=output=tcpserver,address=*,port=8089"
       DOCKER_JAVA_OPTS: "-Xms1g -Xmx1g"
       SPRING_PROFILES_ACTIVE: default
       SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK_SET_URI: https://oidc.cloudtrain.aws.msgoat.eu/realms/cloudtrain/protocol/openid-connect/certs
