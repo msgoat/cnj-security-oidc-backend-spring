@@ -1,12 +1,5 @@
 # cnj-security-oidc-backend-spring
 
-Cloud native java backend using OpenID Connect security based on Spring Boot.
-
-## Status
-
-![Build status](https://codebuild.eu-west-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiMHhKN1RNeFhveUkyamJNZVJaUU5mbjJCY0Z4WWVLeUhRbHBwL0Rtc0V4UWUzd0hGdFZlN0VzUmJZcTBIaGlwc3VuSm5nakp0NXBjdzhXSDNvTjk0UGlFPSIsIml2UGFyYW1ldGVyU3BlYyI6ImFwbmVXM3l5UldYYndjc2ciLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)
-
-
 Cloud native Java backend exposing REST endpoints protected
 by [OpenID Connect](https://openid.net/developers/how-connect-works/)
 security based on [Spring Security](https://docs.spring.io/spring-security/reference/index.html)
@@ -69,7 +62,7 @@ to secure access to protected resources.
 
 ## Status
 
-![Build status](https://codebuild.eu-west-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiM0ptanh5OG9HMGxwdmtRMEE1bitYOVM2ZjEra0RkeGdIUkJCSDZRL2FNS1hvVFBWSEI3NTlmdHF2SThiTW5xeVdRY3FlSFVqb0FKS2o2ZHl1SGZLbURvPSIsIml2UGFyYW1ldGVyU3BlYyI6Inh0dmVEWENBVnZybTFSekoiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)
+![Build status](https://codebuild.eu-west-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiMHhKN1RNeFhveUkyamJNZVJaUU5mbjJCY0Z4WWVLeUhRbHBwL0Rtc0V4UWUzd0hGdFZlN0VzUmJZcTBIaGlwc3VuSm5nakp0NXBjdzhXSDNvTjk0UGlFPSIsIml2UGFyYW1ldGVyU3BlYyI6ImFwbmVXM3l5UldYYndjc2ciLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)
 
 ## Release Information
 
