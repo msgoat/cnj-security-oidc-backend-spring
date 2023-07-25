@@ -22,7 +22,7 @@ import java.util.UUID;
 @Secured("CLOUDTRAIN_USER")
 public class HelloWorld {
 
-    private static final String WELCOME_MESSAGE_TEMPLATE = "Dear \"%s\", welcome to a cloud native Java application protected by OpenID Connect!";
+    private static final String WELCOME_MESSAGE_TEMPLATE = "Dear \"%s\", welcome to a cloud native Java application based on Spring Boot protected by OpenID Connect!";
 
     /**
      * Returns a welcome message to the currently authenticated user.
