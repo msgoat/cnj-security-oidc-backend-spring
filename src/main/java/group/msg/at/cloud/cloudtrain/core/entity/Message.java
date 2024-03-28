@@ -13,6 +13,8 @@ public class Message {
 
     private Locale locale;
 
+    private String user;
+
     public Message() {
         super();
     }
@@ -47,6 +49,14 @@ public class Message {
 
     public void setLocale(Locale locale) {
         this.locale = locale;
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
     }
 
     @Override

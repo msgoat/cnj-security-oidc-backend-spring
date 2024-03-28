@@ -32,8 +32,9 @@ public class HelloWorld {
         String authenticatedUserId = authentication != null ? authentication.getName() : "anonymous";
         Message result = new Message(UUID.randomUUID());
         result.setCode("hello");
-        result.setLocale(Locale.GERMANY);
-        result.setText(String.format(WELCOME_MESSAGE_TEMPLATE, authenticatedUserId));
+        result.setText("Welcome to Cloud Native Java with Spring Boot!");
+        result.setUser(authenticatedUserId);
+        result.setLocale(Locale.ENGLISH);
         return result;
     }
 }
